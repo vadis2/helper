@@ -22,3 +22,5 @@ git clone https://github.com/vadis2/helper.git
 ```
 
 Will be created parent/helper wih appropriated files.
+
+Cloning create origin.
