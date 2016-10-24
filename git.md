@@ -14,3 +14,8 @@ Add
   type = cat-file -t
   dump = cat-file -p
 ```
+## commands
+
+|to do                 |command                  |
+|----------------------|-------------------------|
+|Cancel Staged changes |git reset HEAD hello.html|
