@@ -19,3 +19,6 @@ Add
 |to do                 |command                  |
 |----------------------|-------------------------|
 |Cancel Staged changes |git reset HEAD hello.html|
+|Create branch         |git checkout -b new_banch|
+|Delete local branch   |git co master           |
+|                      |git branch -d the_local_branch|

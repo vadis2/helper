@@ -8,5 +8,6 @@ npm i -g node-static
 ```
 cd project_dir
 static .
+npm run dev
 ```
 Open appropriate url.

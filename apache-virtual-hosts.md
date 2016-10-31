@@ -10,7 +10,7 @@ sudo chmod -R 755 /var/www
 ```
 Create Demo Page
 ```
-nano /var/www/example.com/public_html/index.html
+sudo nano /var/www/example.com/public_html/index.html
 ```
 ```
 <html>

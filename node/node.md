@@ -17,3 +17,8 @@ https://github.com/npm/node-semver
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 static .
+
+## Commands
+|to do                                             |command                  |
+|--------------------------------------------------|-------------------------|
+|How to list npm user-installed globally packages? |npm list -g --depth=0    |
