@@ -1,10 +1,4 @@
 # VAGRANT
-## useful links
-Download Vagrant: https://www.vagrantup.com
-
-Helper: http://eax.me/vagrant/
-
-
 ## commands
 |to do                                             |command                                          |
 |--------------------------------------------------|-------------------------------------------------|
@@ -18,4 +12,3 @@ Helper: http://eax.me/vagrant/
 |vagrant and it's dependencies                     |                                                 |
 |--------------------------------------------------|-------------------------------------------------|
 
-Download VM: https://www.virtualbox.org/wiki/Linux_Downloads
