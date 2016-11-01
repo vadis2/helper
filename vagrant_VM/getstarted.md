@@ -1,11 +1,18 @@
 # VAGRANT-VM. GET STARTED
-Create dir:
+## links
+http://eax.me/vagrant/
+
+## workflow
+Download box
 ```
-mkdir my_dir
+vagrant box add ubuntu/trusty64
+vagrant box list
 ```
 Create a base Vagrantfile:
 ```
-vagrant init my_dir
+mkdir -p ~/vagrant/ubuntu-test
+cd ~/vagrant/ubuntu-test
+vagrant init ubuntu/trusty64
 ```
 Other commands with init:
 https://www.vagrantup.com/docs/cli/init.html
@@ -23,5 +30,7 @@ To stop machine
 vagrant destroy fccd81c
 ```
 
-Errors:
+## Errors:
 http://askubuntu.com/questions/41550/how-do-i-run-a-64-bit-guest-in-virtualbox
+
+Do virtualization enabled in BIOS.
