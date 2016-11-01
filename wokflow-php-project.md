@@ -12,3 +12,10 @@ Git init.
 Create gitignore.
 
 Push.
+
+## Set permissions
+```
+sudo chown -R $USER:$USER /var/www/example.com/public_html
+sudo chmod -R 755 /var/www
+sudo service apache2 restart
+```
