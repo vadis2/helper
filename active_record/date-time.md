@@ -1,4 +1,8 @@
 # DATE, TIME
+https://www.startutorial.com/articles/view/master-php-datetime
+
+## carbon
+http://carbon.nesbot.com/#gettingstarted
 ## datetime
 To save
 ```
@@ -29,3 +33,6 @@ $tasks = Task::find('all', array('conditions' => $string));
 ```
 Link about comparison: 
 http://dev.mysql.com/doc/refman/5.7/en/comparison-operators.html#operator_less-than
+
+## weekend
+$inputDate->format('N') >= 6;

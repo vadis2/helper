@@ -6,5 +6,7 @@
 |                                                  |cd ./public                                      |
 |now here                                          |vadis@vadis-ThC:~/Projects/es6-project/public    |
 |--------------------------------------------------|-------------------------------------------------|
-|delete dir with files                             |sudo rm -rf dir_name                                  |
+|delete dir with files                             |sudo rm -rf dir_name                             |
+|--------------------------------------------------|-------------------------------------------------|
+|move dir with files                               |sudo mv fromPath/ toPath/                        |
 |--------------------------------------------------|-------------------------------------------------|

@@ -22,3 +22,4 @@ Add
 |Create branch         |git checkout -b new_banch|
 |Delete local branch   |git co master           |
 |                      |git branch -d the_local_branch|
+|Delete old and add new origin |git remote set-url origin git@github.com:vadis2/s-a-y-db.git|
