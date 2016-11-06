@@ -26,3 +26,19 @@ or
 sudo php bin/console server:start
 ```   
 Open http://localhost:8000/
+
+## symfony 3
+1. Change your current directory to /home/vadis/Projects/learn_symfony/aqua_note
+2. Configure your application in app/config/parameters.yml file.
+3. Run your application:
+..1. Execute the php bin/console server:start command.
+..2. Browse to the http://localhost:8000 URL.
+4. Read the documentation at http://symfony.com/doc
+## Install Plugins
+PHP Annotations
+
+Symfony Plugin
+
+## Create alias in bash
+
+## Create PHPStorm project
