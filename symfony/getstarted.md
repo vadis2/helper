@@ -21,8 +21,6 @@ symfony new my_project_name 2.8
 cd my_project_name/
 sudo php bin/console server:run
 or
-sudo php app/console server:run
-or
 sudo php bin/console server:start
 ```   
 Open http://localhost:8000/
@@ -42,3 +40,6 @@ Symfony Plugin
 ## Create alias in bash
 
 ## Create PHPStorm project
+
+## Cashing, to get autocomplete
+Dir var -> right click -> mark directory as excluded

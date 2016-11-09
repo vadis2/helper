@@ -20,6 +20,9 @@ Add
 |----------------------|-------------------------|
 |Cancel Staged changes |git reset HEAD hello.html|
 |Create branch         |git checkout -b new_banch|
-|Delete local branch   |git co master           |
+|Delete local branch   |git co master            |
 |                      |git branch -d the_local_branch|
 |Delete old and add new origin |git remote set-url origin git@github.com:vadis2/s-a-y-db.git|
+|Delete indexed files  |git reset HEAD models/Name.php|
+|Delete indexed dir    |git reset HEAD src            |
+|||

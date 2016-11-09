@@ -1,3 +1,4 @@
+# GITHUB
 ## Create a new repository on the command line
 
 ```
@@ -51,3 +52,5 @@ Cloning create origin.
    origin  git@github.com:USERNAME/OTHERREPOSITORY.git (fetch)
    origin  git@github.com:USERNAME/OTHERREPOSITORY.git (push)
    ```
+## Delete repo
+https://help.github.com/articles/deleting-a-repository/
