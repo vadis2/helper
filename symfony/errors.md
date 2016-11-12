@@ -1,5 +1,6 @@
 # ERRORS
-## var cache  dev is not writable
+## var/cache/dev is not writable
+## var/session/dev ... permission denied
 ### link
 http://symfony.com/doc/current/setup/file_permissions.html
 ### solution

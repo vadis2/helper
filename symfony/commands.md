@@ -1,7 +1,7 @@
 #COMMANDS
 |Descriptions        |command                                      |
 |--------------------|---------------------------------------------|
-|command list        |sudo php bin/console                         |
+|services, commands list |bin/console                              |
 |routes list         |sudo php bin/console debug:router            |
 |container list      |sudo php bin/console debug:container         |
 |List of services    |sudo php bin/console config:dump-reference          |
@@ -9,4 +9,5 @@
 |Create DB           |sudo php bin/console doctrine:database:create    |
 |Check query to DB   |sudo php bin/console doctrine:database:schema:update --dump-sql    |
 |Create DB tables    |sudo php bin/console doctrine:database:schema:update --force    |
+|To check service exist|bin/console|
 
