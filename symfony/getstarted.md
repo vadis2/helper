@@ -25,6 +25,9 @@ sudo php bin/console server:start
 ```   
 Open http://localhost:8000/
 
+## create phpStorm project
+sudo chown -R $USER:$USER /home/vadis/Projects/sysmail_2
+
 ## symfony 3
 1. Change your current directory to /home/vadis/Projects/learn_symfony/aqua_note
 2. Configure your application in app/config/parameters.yml file.

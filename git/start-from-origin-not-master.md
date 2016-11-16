@@ -1,5 +1,5 @@
 # Start from origin not master
-1. create local project
+1. create dir for local project
 2. cd project_root
 3. git init 
 4. clone
