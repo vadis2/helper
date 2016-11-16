@@ -35,10 +35,10 @@ sudo chown -R $USER:$USER /home/vadis/Projects/sysmail_2
 ..1. Execute the php bin/console server:start command.
 ..2. Browse to the http://localhost:8000 URL.
 4. Read the documentation at http://symfony.com/doc
-## Install Plugins
-PHP Annotations
 
-Symfony Plugin
+## Install Plugins
+1. PHP Annotations
+2. Symfony Plugin
 
 ## Create alias in bash
 
@@ -46,3 +46,14 @@ Symfony Plugin
 
 ## Cashing, to get autocomplete
 Dir var -> right click -> mark directory as excluded
+
+## Update
+```
+composer update
+```
+
+## Cache
+```
+php bin/console security:check
+```
+
