@@ -1,5 +1,5 @@
 # Entity
-## coding
+## Preparations
 1. cd 
 2. mkdir Entity
 3. phpStorm: right click new Class
@@ -11,12 +11,14 @@
 use Doctrine\ORM\Mapping as ORM;
 ```
 
-4. Insert 
+## ORM Annotations
+1. Insert 
 ```
 private $id 
 etc
 ```
-5. phpStorm: Code->Generate ( Alt + Insert )->ORM Annotations
+
+2. phpStorm: Code->Generate ( Alt + Insert )->ORM Annotations
 
 ## definitions
 
@@ -27,7 +29,7 @@ etc
   1. Edit phpDoc
 http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#property-mapping
 
-6. create db
+3. create db
 ```
 sudo php bin/console doctrine:database:create
 ```
