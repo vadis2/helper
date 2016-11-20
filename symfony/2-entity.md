@@ -11,23 +11,21 @@
 use Doctrine\ORM\Mapping as ORM;
 ```
 
-## ORM Annotations
-1. Insert 
+## Insert variables 
 ```
 private $id 
 etc
 ```
-
-2. phpStorm: Code->Generate ( Alt + Insert )->ORM Annotations
-
-## definitions
+## ORM Annotations
+1. phpStorm: Code->Generate ( Alt + Insert )->ORM Annotations
+2. definitions
 
 |Doctrine|MySQL|
 |--------|-----|
 |string  |varchar|
 
-  1. Edit phpDoc
 http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#property-mapping
+
 
 3. create db
 ```
