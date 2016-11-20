@@ -1,10 +1,10 @@
 # Entity
 ## coding
-0. cd 
-1. mkdir Entity
-2. phpStorm: right click new Class
-..2. Class: Team
-..2. Namespace: AppBundle\Entity;
+* cd 
+* mkdir Entity
+* phpStorm: right click new Class
+    * Class: Team
+    * Namespace: AppBundle\Entity;
 3. phpStorm: Code->Generate ( Alt + Insert )->ORM Class
 ..1. Must be auto inserting 
 ```
