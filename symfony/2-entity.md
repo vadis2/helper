@@ -6,7 +6,7 @@
   1. Class: Team
   2. Namespace: AppBundle\Entity;
 3. phpStorm: Code->Generate ( Alt + Insert )->ORM Class
- 1. Must be auto inserting 
+  1. Must be auto inserting 
 ```
 use Doctrine\ORM\Mapping as ORM;
 ```
@@ -16,12 +16,16 @@ private $id
 etc
 ```
 5. phpStorm: Code->Generate ( Alt + Insert )->ORM Annotations
+
 ## definitions
+
 |Doctrine|MySQL|
 |--------|-----|
 |string  |varchar|
+
   1. Edit phpDoc
 http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#property-mapping
+
 6. create db
 ```
 sudo php bin/console doctrine:database:create
