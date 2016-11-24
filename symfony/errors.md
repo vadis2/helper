@@ -1,6 +1,8 @@
 # ERRORS
 ## var/cache/dev is not writable
 ## var/session/dev ... permission denied
+## Script Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::clearCache handling the symfony-scripts event terminated with an exception
+
 ### link
 http://symfony.com/doc/current/setup/file_permissions.html
 ### solution

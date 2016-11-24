@@ -26,6 +26,10 @@ etc
 
 http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#property-mapping
 
+```
+length=30, unique=true
+nullable=true
+```
 
 ## create db
 ```
@@ -33,7 +37,9 @@ sudo php bin/console doctrine:database:create
 sudo php bin/console doctrine:schema:update --dump-sql
 sudo php bin/console doctrine:schema:update --force
 ```
-## phpStorm: Code->Generate ( Alt + Insert )->Getters and Setters
+
+## phpStorm
+Code->Generate ( Alt + Insert )->Getters and Setters
 
 ## To save:
 ```
