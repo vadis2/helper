@@ -11,3 +11,5 @@
 |description                  |command                                     |
 |-----------------------------|--------------------------------------------|
 |delete file from index       |git rm --cached [file]                      |
+|delete dir with files from repo |git rm -rf dir                           |
+|                                |... git pom                              |
