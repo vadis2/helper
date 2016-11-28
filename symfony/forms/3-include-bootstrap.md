@@ -3,6 +3,7 @@
 https://symfony.com/doc/current/reference/configuration/twig.html
 
 ## Example
+config.yml
 ```
 # Twig Configuration
 twig:

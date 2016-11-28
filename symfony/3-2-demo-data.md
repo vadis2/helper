@@ -89,7 +89,7 @@ class LoadFixtures implements FixtureInterface
     
         $key = array_rand($teams);
     
-        return $teams[$key].'-'.rand(1,3);
+        return $teams[$key].rand(1,3);
     }
 }
 ```

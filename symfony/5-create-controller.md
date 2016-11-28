@@ -41,7 +41,7 @@ team:
 ```
 ## add route for each function
 ```
-@Route("/admin/team")
+@Route("/admin/team", name="admin_team")
 
 This must insert:
  

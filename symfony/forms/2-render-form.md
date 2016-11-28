@@ -4,10 +4,14 @@
 public function newAction()
 {
     $form = $this->createForm(GenusFormType::class);
-    return $this->render('admin/genus/new.html.twig', [
+    return $this->render('Admin/genus/new.html.twig', [
         'genusForm' => $form->createView()
     ]);
 }
+```
+## create file
+```
+Admin/genus/new.html.twig
 ```
 ## view
 ```
@@ -29,4 +33,6 @@ public function newAction()
     </div>
 {% endblock %}
 ```
+
+Check extends.
 
