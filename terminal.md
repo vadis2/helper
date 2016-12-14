@@ -9,3 +9,4 @@
 |move dir with files                               |sudo mv fromPath/ toPath/                        |
 |copy file                                         |cp -b /home/untitelds.mpg /media/sda3/SkyDrive   |
 |start php native server                           |php -S localhost:8000                            |
+|set mode recursively                              |sudo chmod -R 777 /var/www                       |
