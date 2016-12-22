@@ -4,8 +4,10 @@
 ### config.php
 1. url
 2. index.php
+
 #### config.php
  Delete index.php 
+
 #### .htaccess
 ````
 RewriteEngine On
@@ -31,6 +33,7 @@ sudo nano /etc/apache2/sites-enabled/chang.com.conf
 sudo service apache2 restart
 ````
 3. .htaccess
+
 ### database.php 
 ````
 ...
