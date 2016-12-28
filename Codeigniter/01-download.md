@@ -20,7 +20,5 @@ sudo nano /etc/apache2/sites-available/example.com.conf
 sudo a2ensite example.com.conf
 sudo service apache2 restart
 ````
-## Check example.com
-
 ## Create bash alias
 

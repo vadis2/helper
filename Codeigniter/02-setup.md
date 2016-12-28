@@ -1,3 +1,5 @@
+# Create IDE project
+
 # Setup
 ## Create DB
 ## Config
@@ -7,6 +9,21 @@
 
 #### config.php
  Delete index.php 
+ 
+ Base URL
+ ````
+ /* Base url detection CI 3 */
+ $offset = explode('index.php', $_SERVER['SCRIPT_NAME']);
+ $offset = $offset[0];
+ if (!defined('URL_OFFSET')) define('URL_OFFSET', $offset);
+ $protocol = 'http';
+ if (isset($_SERVER['HTTPS'])) {
+     if ('on' == $_SERVER['HTTPS']) $protocol = 'https';
+ }
+ $base_url = $protocol.'://'.$_SERVER['SERVER_NAME'].$offset;
+ 
+ $config['base_url']	= $base_url;
+ ````
 
 #### .htaccess
 ````
@@ -20,11 +37,11 @@ RewriteRule ^(.*)$ index.php/$1 [L]
 sudo nano /etc/apache2/sites-enabled/chang.com.conf
 
 <VirtualHost *:80>
-    <Directory /var/www/html>
-                    Options Indexes FollowSymLinks MultiViews
-                    AllowOverride All
-                    Order allow,deny
-                    allow from all
+    <Directory /var/www/plexidoc2.com/public_html/CodeIgniter>
+         Options Indexes FollowSymLinks MultiViews
+         AllowOverride All
+         Order allow,deny
+         allow from all
     </Directory>
 
     . . .
@@ -32,11 +49,12 @@ sudo nano /etc/apache2/sites-enabled/chang.com.conf
 
 sudo service apache2 restart
 ````
-3. .htaccess
 
 ### database.php 
 ````
 ...
-'dbdriver' => 'mysql'
+'dbdriver' => 'mysqli'
 ````
+
+
 
