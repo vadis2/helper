@@ -30,4 +30,5 @@ sudo chmod -R 755 /var/www
 sudo service apache2 restart
 ```
 
-## 
+## For CodeIgniter
+https://github.com/vadis2/helper/blob/master/Codeigniter/02-setup.md
