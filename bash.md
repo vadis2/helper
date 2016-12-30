@@ -10,5 +10,6 @@ alias teamlist='cd ~/Projects/teamlist'
 ```
 Now execute 
 ```
+cd ~
 . ~/.bashrc
 ```
