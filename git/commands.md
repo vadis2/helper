@@ -18,6 +18,7 @@
 |description                    |command                                     |
 |-------------------------------|--------------------------------------------|
 |create branch, redirect to it  |git co -b smallchanges                      |
+|see all branches               |git branch                                  |
 |see all branches history       |git hist --all                              |
 |redirect to branch master      |git checkout master                         |
 |see file                       |cat lib/hello.html                          |
