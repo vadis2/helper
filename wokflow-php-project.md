@@ -16,7 +16,11 @@ Git init.
 ## Start from local project
 Create gitignore.
 
-Push.
+```
+git remote add origin git@github.com:vadis2/cihmvcd.git
+git push -u origin master
+```
+
 
 ## Start from git repo
 ```

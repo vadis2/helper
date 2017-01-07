@@ -4,10 +4,6 @@
 ## Create DB
 ## Config
 ### config.php
-1. url
-2. index.php
-
-#### config.php
  Delete index.php 
  
  Base URL
@@ -25,19 +21,19 @@
  $config['base_url']	= $base_url;
  ````
 
-#### .htaccess
+### .htaccess
 ````
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
 ````
-#### .conf для apache2
+### .conf для apache2
 ````
 sudo nano /etc/apache2/sites-enabled/chang.com.conf
 
 <VirtualHost *:80>
-    <Directory /var/www/plexidoc2.com/public_html/CodeIgniter>
+    <Directory /var/www/plexidoc2.com/public_html/codeigniter>
          Options Indexes FollowSymLinks MultiViews
          AllowOverride All
          Order allow,deny
@@ -53,8 +49,14 @@ sudo service apache2 restart
 ### database.php 
 ````
 ...
-'dbdriver' => 'mysqli'
+'hostname' => 'localhost',
+'username' => 'root',
+'password' => '456v123',
+'database' => 'cihmvcd',
+'dbdriver' => 'mysqli',
 ````
+## Check site url
+You must see welcome page.
 
 
 

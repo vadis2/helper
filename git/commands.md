@@ -14,6 +14,11 @@
 |delete dir with files from repo |deleting!!! git rm -rf dir                  |
 |                                |... git pom                                 |
 
+## Origin (remote repo)
+|description                     |command                                                     |
+|--------------------------------|------------------------------------------------------------|
+|change remote origin            |git remote set-url origin git@github.com:vadis2/cihmvcd.git |
+
 ## Branches
 |description                    |command                                     |
 |-------------------------------|--------------------------------------------|
