@@ -26,3 +26,5 @@
 |Merge from master to style     |git checkout style                          |
 |                               |git merge master                            |
 |                               |git hist --all                              |
+|Delete branch with checking    |git branch -d testing                       |
+|Delete branch without checking |git branch -D testing                       |

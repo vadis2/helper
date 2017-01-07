@@ -1,4 +1,5 @@
 # How To Set Up Apache Virtual Hosts on Ubuntu 16.04
+Domain name can't include "_".
 ```
 sudo mkdir -p /var/www/example.com/public_html
 ```
