@@ -29,8 +29,20 @@ https://www.jetbrains.com/help/phpstorm/2016.2/configuring-xdebug.html
 
 1. File/Settings/Languages and Frameworks/PHP
 2. Run/Edit configurations click + choose PHP web application
-3. Create server (rtasks.com)
-4. Run/Web Server Debug Validation (1 error in the list is Ok)
+Create server
+````
+plexidoc3.com 80 XDebug
+````
+Run/Debug Configurations
+````
+/...
+bottom: html://...
+````
+3. Run/Web Server Debug Validation (1 error in the list is Ok)
+```
+Path: /var/www/rtasks.com/public_html
+URL: http://rtasks.com/
+```
 
 ## start
 1. Insert breakpoint
