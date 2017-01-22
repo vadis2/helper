@@ -2,6 +2,8 @@
 ````
 sudo /bin/test2.sh
 sudo nano /etc/hosts
+sudo chmod -R 755 /var/www
+sudo chown -R $USER:$USER /var/www
 ```
 Add
 ```

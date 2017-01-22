@@ -11,4 +11,4 @@
 |copy file                                         |cp -b /home/untitelds.mpg /media/sda3/SkyDrive   |
 |start php native server                           |php -S localhost:8000                            |
 |set mode recursively                              |sudo chmod -R 777 /var/www                       |
-|change dir name                                   |sudo mv /var/www/iq-install.com /var/www/iqi.com |
+|change dir name, file name                        |sudo mv /var/www/iq-install.com /var/www/iqi.com |

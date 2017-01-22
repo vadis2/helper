@@ -12,10 +12,10 @@ sudo touch /var/www/$NAME/public_html/index.html
 sudo cat << EOF > /var/www/$NAME/public_html/index.html
 <html>
   <head>
-    <title>Welcome to Example.com!</title>
+    <title>Welcome to $NAME!</title>
   </head>
   <body>
-    <h1>Success!  The example.com virtual host is working!</h1>
+    <h1>Success!  The $NAME virtual host is working!</h1>
   </body>
 </html>
 EOF
@@ -31,5 +31,6 @@ sudo cat << EOF > /etc/apache2/sites-available/$NAME.conf
 </VirtualHost>
 EOF
 sudo a2ensite $NAME.conf
-sudo service apache2 restart
+sudo chmod -R 755 /var/www
 sudo chown -R $USER:$USER /var/www/
+sudo service apache2 restart
