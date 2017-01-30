@@ -1,19 +1,21 @@
+## Create controller
 ````
-php artisan make:controller PagesController
+php artisan make:controller TestController
 ````
-# Add action
+## Add action
 ````
-public function home()
+public function test()
     {
-        return view('welcome');
+        return view('test');
     }
 ````
-# Add route
+## Add route
 ````
-Route::get('/', 'PagesController@home');
+Route::get('/', 'TestController@home');
 ````
+## Create view
 
-# Clear views cache
+## Clear views cache if it's needed
 ````
 php artisan view:clear
 ````

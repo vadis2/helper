@@ -50,3 +50,32 @@ Route::get('test1', function () {
     return 'Hello Test 1';
 });
 ```
+# Configuration
+https://laravel.com/docs/5.4/installation#configuration
+
+## DB
+### app/config/database.php
+````
+'mysql' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'lcore'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', '456v123'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+````
+### .env
+````
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=lcore
+DB_USERNAME=root
+DB_PASSWORD=456v123
+````

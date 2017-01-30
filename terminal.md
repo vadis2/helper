@@ -12,3 +12,5 @@
 |start php native server                           |php -S localhost:8000                            |
 |set mode recursively                              |sudo chmod -R 777 /var/www                       |
 |change dir name, file name                        |sudo mv /var/www/iq-install.com /var/www/iqi.com |
+|check permission of files in directory            |ls -l bootstrap                                  |
+|check permission of directory                     |stat bootstrap                                   |
