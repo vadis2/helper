@@ -1,0 +1,1 @@
+https://learninglaravel.net/build-a-full-featured-admin-cp-in-ten-minutes-with-laravel-admin
