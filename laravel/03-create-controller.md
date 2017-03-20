@@ -1,6 +1,8 @@
 ## Create controller
 ````
 php artisan make:controller TestController
+
+php artisan make:controller PhotoController --resource
 ````
 ## Add action
 ````
