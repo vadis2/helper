@@ -136,6 +136,7 @@ http://jsbin.com/uboqu3/1/edit?html,js,output
 Solution by JS only.
 ```
 view:
+<input type='file' onchange="readURL(this);" />
 <img id="logo-file" src="#" alt="your image" />
 
 js:
