@@ -20,4 +20,14 @@ sudo php artisan migrate
 git checkout master
 git merge new_branch
 git hist --all
+git pom
+````
+8. Server
+Check
+````
+git st
+````
+````
+sudo git checkout master
+sudo git pull origin master
 ````
