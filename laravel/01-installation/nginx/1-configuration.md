@@ -1,4 +1,7 @@
 # Configuration
+## interesting link
+http://devmarketer.io/learn/deploy-laravel-5-app-lemp-stack-ubuntu-nginx/
+
 ## PHP
 Install extensions:
 https://learninglaravel.net/books/laravel/deploying-our-laravel-applications-3rd-edition
