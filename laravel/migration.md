@@ -11,6 +11,8 @@ php artisan migrate:rollback
 
 php artisan migrate:rollback --step=5
 
+php artisan make:migration add_shipped_to_purchase_orders_table --table=purchase_orders
+
 All:
 php artisan migrate:reset
 ````

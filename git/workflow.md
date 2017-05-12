@@ -8,6 +8,8 @@ git push origin new_branch
 ````
 5. Server: 
 ````
+sudo git checkout -b new_branch
+
 sudo git pull origin new_branch
 
 sudo git checkout new_branch
