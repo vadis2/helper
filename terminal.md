@@ -14,3 +14,4 @@
 |change dir name, file name                        |sudo mv /var/www/iq-install.com /var/www/iqi.com |
 |check permission of files in directory            |ls -l bootstrap                                  |
 |check permission of directory                     |stat bootstrap                                   |
+|un Gzip bzip2                                     |tar -xvf archive.tar.bz2 -C /path/to/folder      |
