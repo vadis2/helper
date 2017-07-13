@@ -16,3 +16,9 @@ git add README.md
 git commit -m "Initial commit"
 git push -u origin master
 ````
+
+I'm starting from the scratch at online server
+````
+sudo git remote add origin https://vvadis@bitbucket.org/vvadis/srs-ui.git
+sudo git pull origin master
+````
