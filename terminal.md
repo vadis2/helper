@@ -1,17 +1,19 @@
 # TERMINAL
 ## commands
-|to do                                             |command                                          |
-|--------------------------------------------------|-------------------------------------------------|
-|we are here                                       |vadis@vadis-ThC:~/Projects/es6-project$          |
-|                                                  |cd ./public                                      |
-|now here                                          |vadis@vadis-ThC:~/Projects/es6-project/public    |
-|delete dir with files                             |sudo rm -rf dir_name                             |
-|delete files                                      |sudo rm -f 1.mp3 bla.html                        |
-|move dir with files                               |sudo mv fromPath/ toPath/                        |
-|copy file                                         |cp -b /home/untitelds.mpg /media/sda3/SkyDrive   |
-|start php native server                           |php -S localhost:8000                            |
-|set mode recursively                              |sudo chmod -R 777 /var/www                       |
-|change dir name, file name                        |sudo mv /var/www/iq-install.com /var/www/iqi.com |
-|check permission of files in directory            |ls -l bootstrap                                  |
-|check permission of directory                     |stat bootstrap                                   |
-|un Gzip bzip2                                     |tar -xvf archive.tar.bz2 -C /path/to/folder      |
+|to do                                                 |command                                                        |
+|------------------------------------------------------|---------------------------------------------------------------|
+|we are here                                           |vadis@vadis-ThC:~/Projects/es6-project$                        |
+|                                                      |cd ./public                                                    |
+|now here                                              |vadis@vadis-ThC:~/Projects/es6-project/public                  |
+|delete dir with files                                 |sudo rm -rf dir_name                                           |
+|delete files                                          |sudo rm -f 1.mp3 bla.html                                      |
+|move dir with files                                   |sudo mv fromPath/ toPath/                                      |
+|copy file                                             |cp -b /home/untitelds.mpg /media/sda3/SkyDrive                 |
+|start php native server                               |php -S localhost:8000                                          |
+|set mode recursively                                  |sudo chmod -R 777 /var/www                                     |
+|change dir name, file name                            |sudo mv /var/www/iq-install.com /var/www/iqi.com               |
+|check permission of files in directory                |ls -l bootstrap                                                |
+|check permission of directory                         |stat bootstrap                                                 |
+|un Gzip bzip2                                         |tar -xvf archive.tar.bz2 -C /path/to/folder                    |
+|Uploading a file from a local computer to a remote one|scp /path/to/local/file username@hostname:/path/to/remote/file |
+|Downloading a file from a remote system to your computer|scp username@hostname:/path/to/remote/file /path/to/local/file  |
