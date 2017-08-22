@@ -22,16 +22,17 @@
 |change remote origin            |git remote set-url origin git@github.com:vadis2/cihmvcd.git  |
 
 ## Branches
-|description                    |command                                     |
-|-------------------------------|--------------------------------------------|
-|create branch, redirect to it  |git co -b smallchanges                      |
-|see all branches               |git branch                                  |
-|see all branches history       |git hist --all                              |
-|redirect to branch master      |git checkout master                         |
-|see file                       |cat lib/hello.html                          |
-|see file                       |cat lib/hello.html                          |
-|Merge from master to style     |git checkout style                          |
-|                               |git merge master                            |
-|                               |git hist --all                              |
-|Delete branch with checking    |git branch -d testing                       |
-|Delete branch without checking |git branch -D testing                       |
+|description                     |command                                             |
+|--------------------------------|----------------------------------------------------|
+|create branch, redirect to it   |git co -b smallchanges                              |
+|see all branches                |git branch                                          |
+|see all branches history        |git hist --all                                      |
+|redirect to branch master       |git checkout master                                 |
+|see file                        |cat lib/hello.html                                  |
+|see file                        |cat lib/hello.html                                  |
+|Merge from master to style      |git checkout style                                  |
+|                                |git merge master                                    |
+|                                |git hist --all                                      |
+|Delete branch with checking     |git branch -d testing                               |
+|Delete branch without checking  |git branch -D testing                               |
+|Delete all branch except master |git branch | grep -v "master" | xargs git branch -D |
