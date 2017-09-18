@@ -1,0 +1,1 @@
+https://support.nic.ua/?/Knowledgebase/Article/View/116/3/aktivaciya-domena-ppua-pri-pomoshi-telegram
