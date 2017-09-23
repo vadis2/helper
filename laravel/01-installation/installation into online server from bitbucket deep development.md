@@ -26,6 +26,14 @@ Install vendor:
 sudo composer install
 ````
 
+Create PHPStorm project
+
+````
+sudo chmod -R o+w vendor
+````
+
+Create DB
+
 Check log in. If there was Auth editing repeat it in online server.
 To change blade login view:
 ````
