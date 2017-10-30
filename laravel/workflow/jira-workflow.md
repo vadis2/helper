@@ -1,4 +1,5 @@
 # JIRA workflow
+````
 Create branch
 Investigation
 Structure
@@ -16,8 +17,10 @@ Create Add New page
 Create Edit page
 Create Delete action
 Deployment
+````
 
 ## Implement from one project into other
+````
 migration
 seeds
 model
@@ -29,8 +32,10 @@ menu
 add new view
 edit view
 delete
+````
 
 ## terminal
+````
 pa
 pam
 pammo
@@ -40,3 +45,4 @@ pamc
 pamr
 pads
 cda
+````
