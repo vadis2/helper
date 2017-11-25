@@ -3,6 +3,8 @@
 Create branch
 Investigation
 Structure
+Block-scheme
+Code structure
 Create routes
 Create migration
 Create seed
