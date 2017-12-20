@@ -16,3 +16,10 @@ php artisan make:migration add_shipped_to_purchase_orders_table --table=purchase
 All:
 php artisan migrate:reset
 ````
+
+## ide-helper
+````
+pa ide-helper:generate
+pa ide-helper:models
+pa ide-helper:meta
+````

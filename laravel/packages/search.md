@@ -1,0 +1,1 @@
+https://softonsofa.com/laravel-searchable-the-best-package-for-eloquent/#more-196
