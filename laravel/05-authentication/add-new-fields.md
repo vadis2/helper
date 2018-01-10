@@ -4,7 +4,7 @@ https://stackoverflow.com/questions/42336115/how-can-i-pass-variable-to-register
 http://www.easylaravelbook.com/blog/2015/09/25/adding-custom-fields-to-a-laravel-5-registration-form/
 
 ## pass data to register form
-Open end edit
+Open end edit by nano:
 \vendor\laravel\framework\src\Illuminate\Foundation\Auth\RegistersUsers.php
 
 ````

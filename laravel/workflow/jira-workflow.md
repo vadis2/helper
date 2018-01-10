@@ -45,6 +45,6 @@ pammi
 pams
 pamc
 pamr
-pads
+pads // make seeding
 cda
 ````
