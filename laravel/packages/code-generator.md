@@ -1,0 +1,1 @@
+https://amranidev.github.io/scaffold-interface/docs/

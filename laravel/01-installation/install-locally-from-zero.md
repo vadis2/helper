@@ -1,6 +1,15 @@
+#Install from zero
+## Install Laravel
 https://laravel.com/docs/5.5/installation
 
-change server configuration:
+Use
+````
+composer create-project --prefer-dist laravel/laravel blog
+or
+composer create-project --prefer-dist laravel/laravel dhh
+````
+
+## change server configuration:
 ````
 sudo nano /etc/nginx/sites-available/laravel3.pp.ua
 
@@ -25,10 +34,17 @@ server {
 
 service nginx restart
 ````
+````
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
 
-Create DB
+stat storage
+stat bootstrap/cache
+````
 
-Change .env
+## Create DB
+
+## Change .env
 ````
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -37,3 +53,9 @@ DB_DATABASE=srs
 DB_USERNAME=root
 DB_PASSWORD=456v123
 ````
+
+## Create phpStorm project
+````
+sudo chown -R $USER:$USER /usr/share/nginx/srs3.com
+````
+Create project

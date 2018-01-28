@@ -1,0 +1,85 @@
+%%
+%% Author: vadis
+%% 15.01.18
+%%
+
+% Preamble
+\documentclass[11pt]{article}
+
+\author{Volodymyr Vadiasov}
+\title{Probability Theory}
+
+% Packages
+\usepackage{a4wide}
+\usepackage{amssymb}
+
+% Document
+\begin{document}
+
+    \maketitle
+
+    \section{Classic Theory}\label{sec:classic}
+    %    \input{introduction}
+
+
+    P(\Omega) = \{\omega_1, \ldots ,\omega_n \}
+
+
+    P(A) = \frac{k}{n}
+
+    \section{Properties}\label{sec:properties}
+
+    P(\Omega) = \{\omega_1, \ldots ,\omega_n \}
+
+    \begin{equation}
+        P(\Omega) = 1
+    \end{equation}
+
+    \begin{equation}
+        P(A) = 0 \iff A = \varnothing
+    \end{equation}
+
+    \begin{equation}
+        P(A\sqcup B) = P(A) + P(B)
+    \end{equation}
+
+    \begin{equation}
+        P(A\cup B) = P(A) + P(B) + P(A\cap B)
+    \end{equation}
+
+    \begin{equation}
+        P(A_1\cup \ldots \cup A_k) = P(A_1) +  \ldots + P(A_k) - P(A_1\cap A_2) - P(A_1\cap A_3) \nonumber
+        - \ldots \negmedspace - P(A_{k-1}\cap A_k) + \ldots + (-1)^{k-1}P(A_1\cap \ldots \cap A_k)
+    \end{equation}
+
+    \begin{equation}
+        P(A_1\cup \ldots \cup A_k) \leq P(A_1) +  \ldots + P(A_k)
+    \end{equation}
+
+    \begin{equation}
+        \overline{A} := \Omega \setminus A
+    \end{equation}
+
+    \begin{equation}
+        P(\overline{A}) = 1 - P(A)
+    \end{equation}
+
+    \section{Conditional Probability}\label{sec:conditional_probability}
+
+    \begin{equation}
+        P(A \mid B) = \frac{P(A\cap B)}{P(B)}
+    \end{equation}
+
+    \section{The total probability formula}\label{sec:total_probability}
+
+    \begin{equation}
+        P(A) = \sum_{k=1}^m P(A \mid B_k)P(B_k)
+    \end{equation}
+
+    \section{The Bayes formula}\label{sec:bayes_formula}
+
+    \begin{equation}
+        P(B_i \mid A) = \frac{P(A\cap B_i)P(B_i)}{\sum_{j=1}^k P(A \mid B_j)P(B_j)}
+    \end{equation}
+
+\end{document}
