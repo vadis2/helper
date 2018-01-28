@@ -1,4 +1,4 @@
-#Install from zero
+# Install from zero
 ## Install Laravel
 https://laravel.com/docs/5.5/installation
 
@@ -35,6 +35,7 @@ server {
 service nginx restart
 ````
 ````
+cd blog
 sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache
 
