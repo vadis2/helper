@@ -1,6 +1,6 @@
 # Often used packages
 ## Permission
-https://github.com/Zizaco/entrust
+Own package
 
 ## phpStorm helpers
 https://github.com/barryvdh/laravel-ide-helper

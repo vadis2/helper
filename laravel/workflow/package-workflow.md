@@ -1,9 +1,10 @@
 # Package Workflow for JIRA
 * Create dir packages
-* Create a dir “Vvvadis” and a subdir “Users”
+* Create a dir “vadiasov” and a subdir “users”
 * Inside that subdirectory, create dir “src”
 * Create composer.json file inside Users directory
 ```` 
+cd to_app_root
 composer init
 ```` 
 
@@ -13,9 +14,10 @@ php artisan make:provider UsersServiceProvider
 ````
 
 * Move provider in src.
+* Change namespace: V(!)endor\P(!)ackage_name
 * include our service provider into providers list of app.php file.
 ````
-Vvvadis\Users\UsersServiceProvider::class
+Vadiasov\Calculator\CalculatorServiceProvider::class,
 ````
 * Add in main composer.json in autoload => psr-4 section    
 ````
@@ -39,6 +41,11 @@ Route::get('todos', function(){
 ````
  require __DIR__ . '/Http/routes.php';
 ````
+* Check in browser
+Maybe,
+````
+sudo chmod -R 777 bootstrap/cache
+````
 3. Controller
 * create a directory “Controllers” inside “Http”
 * create controller
@@ -60,6 +67,11 @@ use App\Http\Controllers\Controller;
   {
     return 'User from controller';
   }
+````
+* Register controller in provider=>register
+````
+// register our controller
+    $this->app->make('Devdojo\Calculator\CalculatorController');
 ````
 * add route
 ````
