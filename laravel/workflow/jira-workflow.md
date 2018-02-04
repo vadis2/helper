@@ -9,8 +9,8 @@ Create routes
 Create migration
 Create seed
 Create versionable tables
-Create Menu
 Create Model
+Create Menu
 Create Form Requests
 Create Controller
 Create Index page
@@ -18,6 +18,8 @@ Create Show page
 Create Add New page
 Create Edit page
 Create Delete action
+Create middleware
+Create permissions
 Deployment
 ````
 

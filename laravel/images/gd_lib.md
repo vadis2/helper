@@ -1,0 +1,1 @@
+http://php.net/manual/ru/book.image.php
