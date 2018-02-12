@@ -2,39 +2,74 @@
 https://github.com/petehouston/laravel-deploy-on-shared-hosting
 https://medium.com/laravel-news/the-simple-guide-to-deploy-laravel-5-application-on-shared-hosting-1a8d0aee923e
 
-Clone from git
-or
+1.
 ````
-sudo git pull origin master
+cd to_root
+git init
+git init
+````
+2. Clone from git
+````
+sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
+````
 
+3. Edit server configuration:
 ````
+sudo nano /etc/nginx/sites-available/laravel3.pp.ua
+
+server {
+    root /usr/share/nginx/srs3.com/blog/public;
+    index index.php index.html index.htm;
+
+    server_name srs3.com www.srs3.com;
+    location / {
+        try_files $uri $uri/ /index.php;
+    }
+
+    location ~ \.php$ {
+        try_files $uri /index.php =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}
+
+service nginx restart
 ````
-sudo chmod -R o+w storage
-sudo chmod -R o+w bootstrap/cache
+4. 
+````
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
 
 stat storage
 stat bootstrap/cache
 ````
-Copy .env from working site
+5. Copy .env from working site
 (laravel3.pp.us)
 ````
 sudo nano .env
 ````
 
-Install vendor:
+6. Install vendor:
 ````
 sudo composer install
 ````
+7. Create DB
 
-Create PHPStorm project
-
+8. Migrate
 ````
-sudo chmod -R o+w vendor
+pa migrate
 ````
 
-Create DB
+9. Seed
+````
+php artisan db:seed
+sudo php artisan db:seed  --class=StartSeeder
+````
 
-Check log in. If there was Auth editing repeat it in online server.
+9. Check log in. If there was Auth editing repeat it in online server.
 To change blade login view:
 ````
 cd vendor/laravel/framework/src/Illuminate/Foundation/Auth
@@ -50,17 +85,9 @@ use...
 function showRegistrationForm()
 ````
 
-````
-??? sudo composer update
-sudo php artisan migrate
-sudo php artisan db:seed or --class...
-````
-
 May be:
 ````
-php composer dumpautoload -o
-php artisan config:cache
-php artisan route:cache
+cda
 ````
 
 

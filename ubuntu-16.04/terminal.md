@@ -6,6 +6,7 @@
 |                                                        |cd ./public                                                    |
 |now here                                                |vadis@vadis-ThC:~/Projects/es6-project/public                  |
 |delete dir with files                                   |sudo rm -rf dir_name                                           |
+|delete files in dir, but keep dir                       |sudo rm dir_name/*                                           |
 |delete files                                            |sudo rm -f 1.mp3 bla.html                                      |
 |move dir with files                                     |sudo mv fromPath/ toPath/                                      |
 |copy file                                               |cp -b /home/untitelds.mpg /media/sda3/SkyDrive                 |

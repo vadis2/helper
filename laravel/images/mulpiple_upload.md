@@ -1,1 +1,0 @@
-http://laraveldaily.com/upload-multiple-files-laravel-5-4/

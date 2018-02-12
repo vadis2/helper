@@ -1,0 +1,1 @@
+https://hdtuto.com/article/laravel-55-create-custom-facade-example-from-scratch
