@@ -72,6 +72,10 @@ class ProcessImageThumbnails implements ShouldQueue
 # Create Supervisor
 ````
 cd /etc/supervisor/conf.d
+
+if there is not:
+apt-get install supervisor
+
 sudo nano laravel-worker.conf
 
 Insert:

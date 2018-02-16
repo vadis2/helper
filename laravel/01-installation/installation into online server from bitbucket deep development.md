@@ -6,7 +6,6 @@ https://medium.com/laravel-news/the-simple-guide-to-deploy-laravel-5-application
 ````
 cd to_root
 git init
-git init
 ````
 2. Clone from git
 ````
