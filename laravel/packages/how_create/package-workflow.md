@@ -70,8 +70,8 @@ php artisan migrate --path=/packages/websanova/demo/src/migrations
 ````
  
 4. Seeds
-* create migration in standard way
-* move migration file to src/migrations
+* create seeds in standard way
+* move seeds file to src/migrations
 * publish seed
 * make seeds
 
