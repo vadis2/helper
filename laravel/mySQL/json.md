@@ -1,0 +1,1 @@
+https://scotch.io/tutorials/working-with-json-in-mysql

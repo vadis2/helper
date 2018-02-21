@@ -285,5 +285,7 @@ cda
 ````
 
 14. Run php artisan vendor:publish to copy the files.
-15. Migrate, seed
-16. check (routes etc)
+15. Migrate
+16. cda
+17. seed
+18. check (routes etc)

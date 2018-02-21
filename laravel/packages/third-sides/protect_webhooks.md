@@ -1,0 +1,1 @@
+https://laravel-news.com/laravel-shield

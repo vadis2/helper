@@ -1,0 +1,1 @@
+http://www.codeinhouse.com/crop-image-laravel-using-jcrop-cropper-plugin/
