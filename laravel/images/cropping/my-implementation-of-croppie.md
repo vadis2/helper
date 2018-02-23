@@ -187,11 +187,13 @@ Route::post('image-crop/{table}/{id}', 'ImageController@imageCropPost');
 ````
 7. Create in storage/app/public artists
 ````
-sudo mkdir storage/app/public/artists
-sudo chmod -R 777 storage/app/public/artists
+sudo mkdir storage/app/public/users
+sudo chmod -R 777 storage/app/public/users
 php artisan storage:link
 ````
-8. Create Package.
+8. Config scrip in the view
+9. Config scrip in the ImageController
+10. Create Package.
 * config
   ````
   viewport: {
