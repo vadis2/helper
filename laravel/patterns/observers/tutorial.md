@@ -1,0 +1,1 @@
+https://tutsforweb.com/laravel-model-observers-tutorial/

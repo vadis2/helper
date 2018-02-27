@@ -116,7 +116,9 @@ https://github.com/foliotek/croppie
     $('.upload-result').on('click', function (ev) {
         $uploadCrop.croppie('result', {
             type: 'canvas',
-            size: 'viewport'
+            size: 'viewport',
+            format: 'jpeg',
+            quality: '0.9'
         }).then(function (resp) {
             $.ajax({
                 url: "/image-crop/artists/" + "<?php echo $artist->id ?>",
@@ -191,8 +193,8 @@ sudo mkdir storage/app/public/users
 sudo chmod -R 777 storage/app/public/users
 php artisan storage:link
 ````
-8. Config scrip in the view
-9. Config scrip in the ImageController
+8. Config script in the view
+9. Config script in the ImageController
 10. Create Package.
 * config
   ````

@@ -8,10 +8,11 @@
  Create composer.json
  Create Service Provider
  Edit main composer.json
- Run composer dump-autoload
+ Checking/Run composer dump-autoload
  Create specification
  Create entity block scheme
  Create logic scheme
+ Evaluation
  Create tests
 ````
 ## Controller part
