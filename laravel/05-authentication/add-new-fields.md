@@ -29,7 +29,7 @@ trait RegistersUsers
     public function showRegistrationForm()
     {
         $countries = Country::all();
-        $countries = $countries->keyBy();
+        $countries = $countries->keyBy('id);
 
         return view('auth.register', compact('countries'));
     }

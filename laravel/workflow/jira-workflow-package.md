@@ -6,6 +6,7 @@
  Choose package name
  Create tree of directories
  Create composer.json
+ Check and edit tree
  Create Service Provider
  Edit main composer.json
  Checking/Run composer dump-autoload
@@ -20,11 +21,13 @@
  Create routes
  Create controller
  Create migration
- Create seed
  Create model
+ Create seed
+ Create menu
  Create index page view
  Delete demo action
  Create Add page view
+ Create Request Validation
  Create store action
  Create Edit page view
  Create update action
