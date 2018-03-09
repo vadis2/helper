@@ -20,3 +20,5 @@
 |unzip                                                   |sudo unzip file                                                |
 |Uploading a file from a local computer to a remote one  |scp /path/to/local/file username@hostname:/path/to/remote/file |
 |Downloading a file from a remote system to your computer|scp username@hostname:/path/to/remote/file /path/to/local/file |
+|Delete spaces from filenames (insert _ instead spaces)  |rename 's/ /_/g' *                                             |
+|Remove parenthesis and brackets from filenames          |rename 's/\(|\[|\]|\)//g' *                                    |

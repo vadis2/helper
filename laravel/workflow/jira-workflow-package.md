@@ -6,6 +6,7 @@
  Choose package name
  Create tree of directories
  Create composer.json
+ Create package discovery
  Check and edit tree
  Create Service Provider
  Edit main composer.json
