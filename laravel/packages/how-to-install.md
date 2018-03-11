@@ -17,6 +17,11 @@ cda
 
 5. Run php artisan vendor:publish to copy the files.
 6. Migrate
+````
+pa migrate --path=/packages/vadiasov/tracks-admin/src/Migrations
+or
+pa migrate --path=/vendor/vadiasov/tracks-admin/src/Migrations
+````
 7. cda
 8. seed
 9. Create Model
