@@ -1,0 +1,1 @@
+https://askubuntu.com/questions/107951/how-to-set-a-specific-window-size-and-placement-for-all-windows-that-open-to-def/107968#107968

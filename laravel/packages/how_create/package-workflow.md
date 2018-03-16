@@ -36,6 +36,9 @@ composer dump-autoload
 ````
 Check errors!
 
+* Edit file
+
+
 2. Basic Functionality
 * create a directory “Http” under “src”
 * create routes.php in Http

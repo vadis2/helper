@@ -8,7 +8,7 @@
  Create composer.json
  Create package discovery
  Check and edit tree
- Create Service Provider
+ Create/Edit/Publish Service Provider
  Edit main composer.json
  Checking/Run composer dump-autoload
  Create specification
@@ -20,11 +20,11 @@
 ## Controller part
 ````
  Create routes
- Create controller
+ Create controller and test action
  Create migration
  Create model
  Create seed
- Create menu
+ Create links, menu
  Create index page view
  Delete demo action
  Create Add page view
@@ -44,6 +44,7 @@
 ````
 ## Final part
 ````
+ Create config
  Publish package
  Install package
  Deployment
