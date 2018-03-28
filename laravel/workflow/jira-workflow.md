@@ -1,8 +1,10 @@
 # JIRA workflow
 ````
+Planning
 Create branch
 Investigation
 Structure
+Evaluation
 Block-scheme
 Code structure
 Create routes
@@ -16,7 +18,9 @@ Create Controller
 Create Index page
 Create Show page
 Create Add New page
+Create Store action
 Create Edit page
+Create Update action
 Create Delete action
 Create middleware
 Create permissions

@@ -6,7 +6,7 @@
 |                                                        |cd ./public                                                    |
 |now here                                                |vadis@vadis-ThC:~/Projects/es6-project/public                  |
 |delete dir with files                                   |sudo rm -rf dir_name                                           |
-|delete files in dir, but keep dir                       |sudo rm dir_name/*                                           |
+|delete files in dir, but keep dir                       |sudo rm dir_name/*                                             |
 |delete files                                            |sudo rm -f 1.mp3 bla.html                                      |
 |move dir with files                                     |sudo mv fromPath/ toPath/                                      |
 |copy file                                               |cp -b /home/untitelds.mpg /media/sda3/SkyDrive                 |
@@ -22,3 +22,4 @@
 |Downloading a file from a remote system to your computer|scp username@hostname:/path/to/remote/file /path/to/local/file |
 |Delete spaces from filenames (insert _ instead spaces)  |rename 's/ /_/g' *                                             |
 |Remove parenthesis and brackets from filenames          |rename 's/\(|\[|\]|\)//g' *                                    |
+|Create downloaded USB image                             |sudo dd bs=4M if=/home/vadis/Downloads/ubuntu-16.04.4-desktop-amd64.iso of=/dev/sdb |

@@ -1,17 +1,18 @@
 # JIRA workflow to create package
 ## Common part
 ````
+ Planning
  Create branch
- Investigation
  Choose package name
  Create tree of directories
+ Investigation
+ Create specification
  Create composer.json
  Create package discovery
  Check and edit tree
  Create/Edit/Publish Service Provider
  Edit main composer.json
  Checking/Run composer dump-autoload
- Create specification
  Create entity block scheme
  Create logic scheme
  Evaluation
