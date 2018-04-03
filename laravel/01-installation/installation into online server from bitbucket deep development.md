@@ -88,5 +88,11 @@ May be:
 ````
 cda
 ````
-
+10. Create all required directories
+````
+sudo php artisan storage:link
+sudo chmod -R 777 storage
+...
+sudo chmod -R 777 storage
+````
 
