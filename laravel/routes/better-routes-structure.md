@@ -1,0 +1,1 @@
+https://medium.com/@thesourav/organize-your-laravel-routes-for-better-and-maintainable-code-4ad9b76aed0f

@@ -14,7 +14,7 @@ sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
 
 3. Edit server configuration:
 ````
-sudo nano /etc/nginx/sites-available/laravel3.pp.ua
+sudo nano /etc/nginx/sites-available/flatwise.io
 
 server {
     root /usr/share/nginx/srs3.com/blog/public;
@@ -80,8 +80,8 @@ cd vendor/laravel/framework/src/Illuminate/Foundation/Auth
 sudo nano RegistersUsers.php
 
 attention to
-use...
-function showRegistrationForm()
+!!! use...
+!!! function showRegistrationForm()
 ````
 
 May be:

@@ -262,7 +262,9 @@ server {
 
 ````
 ````
+sudo nginx -t
 sudo /etc/init.d/nginx restart
+sudo apt-get install phpmyadmin php-mbstring php-gettext
 ````
 
 Check:
