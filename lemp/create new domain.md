@@ -57,6 +57,12 @@ Then reload Nginx if OK is displayed
 ````
 sudo systemctl reload nginx
 ````
+Create row in the file hosts
+````
+cd /etc
+sudo nano hosts
+````
+
 Git config
 ````
 

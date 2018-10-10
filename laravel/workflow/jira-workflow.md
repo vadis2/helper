@@ -16,7 +16,6 @@ Create Menu
 Create Form Requests
 Create Controller
 Create Index page
-Create Show page
 Create Add New page
 Create Store action
 Create Edit page
