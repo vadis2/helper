@@ -11,13 +11,13 @@ composer create-project --prefer-dist laravel/laravel dhh
 
 ## change server configuration:
 ````
-sudo nano /etc/nginx/sites-available/laravel3.pp.ua
+sudo nano /etc/nginx/sites-available/cms.com
 
 server {
-    root /usr/share/nginx/srs3.com/blog/public;
+    root /var/www/cms.com/cms/public;
     index index.php index.html index.htm;
 
-    server_name srs3.com www.srs3.com;
+    server_name cms.com www.cms.com;
     location / {
         try_files $uri $uri/ /index.php;
     }
@@ -35,7 +35,7 @@ server {
 service nginx restart
 ````
 ````
-cd blog
+cd cms
 sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache
 
@@ -57,6 +57,6 @@ DB_PASSWORD=456v123
 
 ## Create phpStorm project
 ````
-sudo chown -R $USER:$USER /usr/share/nginx/srs3.com
+sudo chown -R $USER:$USER /var/www/cms.com
 ````
 Create project
