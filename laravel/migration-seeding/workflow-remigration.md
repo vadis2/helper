@@ -1,3 +1,7 @@
+# Re-migration + seed
+````
+pa migrate:refresh --seed
+````
 # Re-migration
 ````
 php artisan migrate:reset
