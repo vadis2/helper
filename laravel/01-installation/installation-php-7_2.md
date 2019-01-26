@@ -14,7 +14,7 @@ sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
 
 3. Edit server configuration:
 ````
-sudo nano /etc/nginx/sites-available/flatwise.io
+sudo nano /etc/nginx/sites-available/metras2.com
 
 server {
     listen 80;
