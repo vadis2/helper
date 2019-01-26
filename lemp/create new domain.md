@@ -1,36 +1,36 @@
 # Create new domain
 ````
 cd /var/www
-sudo mkdir -p flatwise.io
-sudo chown -R $USER:$USER /var/www/flatwise.io
+sudo mkdir -p metras2.com
+sudo chown -R $USER:$USER /var/www/metras2.com
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/flatwise.io/index.html
+sudo nano /var/www/metras2.com/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to flatwise.io!</title>
+        <title>Welcome to metras2.com!</title>
     </head>
     <body>
-        <h1>Success!  The flatwise.io server block is working!</h1>
+        <h1>Success!  The metras2.com server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/flatwise.io
+sudo nano /etc/nginx/sites-available/metras2.com
 
 ````
 ````
 server {
-    root /var/www/flatwise.io;
+    root /var/www/metras2.com;
     index index.php index.html index.htm;
 
-    server_name flatwise.io www.flatwise.io;
+    server_name metras2.com www.metras2.com;
     location / {
         try_files $uri $uri/ /index.php;
     }
@@ -43,11 +43,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/flatwise.io /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/metras2.com /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/flatwise.io
+sudo rm -f /etc/nginx/sites-enabled/metras2.com
 ````
 Do an Nginx configuration test:
 ````
