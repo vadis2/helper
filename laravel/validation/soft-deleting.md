@@ -1,0 +1,1 @@
+https://wisdmlabs.com/blog/laravel-soft-delete-unique-validations/
