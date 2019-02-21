@@ -1,0 +1,1 @@
+https://daringfireball.net/2010/07/improved_regex_for_matching_urls

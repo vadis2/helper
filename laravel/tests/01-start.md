@@ -5,7 +5,7 @@ pa cache:clear
 ````
 Migrate
 ````
-php artisan migrate --seed --env=testing
+php artisan migrate:refresh --seed --env=testing
 ````
 Start
 ````

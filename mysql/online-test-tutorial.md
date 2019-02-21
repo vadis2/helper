@@ -1,0 +1,1 @@
+http://www.mysqltutorial.org/tryit/query/mysql-where/#2
