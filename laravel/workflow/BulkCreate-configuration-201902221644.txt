@@ -1,0 +1,83 @@
+{
+  "config.version" : "2.0",
+  "config.project.from.csv" : "false",
+  "config.encoding" : "UTF-8",
+  "config.file.id" : "d1e21cc3-a1f3-47dd-a0b6-3749bf891b45",
+  "config.email.suffix" : "@",
+  "config.file.name" : "jira-workflow.csv",
+  "config.field.mappings" : {
+    "Assignee" : {
+      "jira.field" : "assignee",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Summary" : {
+      "jira.field" : "summary",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Issue Type" : {
+      "jira.field" : "issuetype",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Priority" : {
+      "jira.field" : "priority",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    },
+    "Reporter" : {
+      "jira.field" : "priority",
+      "userChanged" : "true",
+      "manualMapping" : "true"
+    }
+  },
+  "config.csv.file.id" : null,
+  "config.value.mappings" : {
+    "Assignee" : {
+      "admin" : "admin"
+    },
+    "Summary" : {
+      "Create Controller" : "Create Controller",
+      "Evaluation" : "Evaluation",
+      "Create Model" : "Create Model",
+      "Create branch" : "Create branch",
+      "Code structure" : "Code structure",
+      "Create Store action" : "Create Store action",
+      "Deployment" : "Deployment",
+      "Create middleware" : "Create middleware",
+      "Block-scheme" : "Block-scheme",
+      "Create Form Requests" : "Create Form Requests",
+      "Create migration" : "Create migration",
+      "Create Edit page" : "Create Edit page",
+      "Create Index page" : "Create Index page",
+      "Create versionable tables" : "Create versionable tables",
+      "Create Update action" : "Create Update action",
+      "Create seed" : "Create seed",
+      "Create Delete action" : "Create Delete action",
+      "Create Menu" : "Create Menu",
+      "Investigation" : "Investigation",
+      "Planning" : "Planning",
+      "Create permissions" : "Create permissions",
+      "Structure" : "Structure",
+      "Create routes" : "Create routes",
+      "Create Add New page" : "Create Add New page"
+    },
+    "Issue Type" : {
+      "Story" : "10003"
+    },
+    "Priority" : {
+      "Medium" : "3"
+    }
+  },
+  "config.delimiter" : ",",
+  "config.project" : {
+    "project.type" : null,
+    "project.key" : "BE2",
+    "project.description" : null,
+    "project.url" : null,
+    "project.name" : "Back-end-2",
+    "project.lead" : "volodymyr.vadiasov"
+  },
+  "config.date.format" : "dd/MMM/yy h:mm a"
+}

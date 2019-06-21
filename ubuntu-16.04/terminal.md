@@ -23,3 +23,5 @@
 |Delete spaces from filenames (insert _ instead spaces)  |rename 's/ /_/g' *                                             |
 |Remove parenthesis and brackets from filenames          |rename 's/\(|\[|\]|\)//g' *                                    |
 |Create downloaded USB image                             |sudo dd bs=4M if=/home/vadis/Downloads/ubuntu-16.04.4-desktop-amd64.iso of=/dev/sdb |
+|Create pdf from the same files                          |cd to the dir of files                                         |
+|                                                        |convert *.jpg file_name.pdf                                    |
