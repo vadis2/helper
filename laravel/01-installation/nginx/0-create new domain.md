@@ -2,29 +2,29 @@
 ````
 cd /var/www
 ls
-sudo mkdir -p wnyfe.com
+sudo mkdir -p codeci.pp.ua
 ls
-sudo chown -R $USER:$USER /var/www/wnyfe.com
+sudo chown -R $USER:$USER /var/www/codeci.pp.ua
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/wnyfe.com/index.html
+sudo nano /var/www/codeci.pp.ua/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to wnyfe.com!</title>
+        <title>Welcome to codeci.pp.ua!</title>
     </head>
     <body>
-        <h1>Success!  The wnyfe.com server block is working!</h1>
+        <h1>Success!  The codeci.pp.ua server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/wnyfe.com
+sudo nano /etc/nginx/sites-available/codeci.pp.ua
 
 ````
 ````
@@ -32,10 +32,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/wnyfe.com;
+    root /var/www/codeci.pp.ua;
     index index.php index.html index.htm;
 
-    server_name wnyfe.com www.wnyfe.com;
+    server_name codeci.pp.ua www.codeci.pp.ua;
 
     location / {
         # First attempt to serve request as file, then
@@ -55,11 +55,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/wnyfe.com /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/codeci.pp.ua /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/wnyfe.com
+sudo rm -f /etc/nginx/sites-enabled/codeci.pp.ua
 ````
 Do an Nginx configuration test:
 Then reload Nginx if OK is displayed
@@ -67,7 +67,7 @@ Then reload Nginx if OK is displayed
 sudo nginx -t
 sudo /etc/init.d/nginx restart
 ````
-Insert new domain wnyfe.com
+Insert new domain codeci.pp.ua
 ````
 sudo nano /etc/hosts
 ````
