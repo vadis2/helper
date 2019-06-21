@@ -2,29 +2,29 @@
 ````
 cd /var/www
 ls
-sudo mkdir -p angularjs.pp.ua
+sudo mkdir -p wny.com
 ls
-sudo chown -R $USER:$USER /var/www/angularjs.pp.ua
+sudo chown -R $USER:$USER /var/www/wny.com
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/angularjs.pp.ua/index.html
+sudo nano /var/www/wny.com/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to angularjs.pp.ua!</title>
+        <title>Welcome to wny.com!</title>
     </head>
     <body>
-        <h1>Success!  The angularjs.pp.ua server block is working!</h1>
+        <h1>Success!  The wny.com server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/angularjs.pp.ua
+sudo nano /etc/nginx/sites-available/wny.com
 
 ````
 ````
@@ -32,10 +32,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/angularjs.pp.ua;
+    root /var/www/wny.com;
     index index.php index.html index.htm;
 
-    server_name angularjs.pp.ua www.angularjs.pp.ua;
+    server_name wny.com www.wny.com;
 
     location / {
         # First attempt to serve request as file, then
@@ -55,11 +55,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/angularjs.pp.ua /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/wny.com /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/angularjs.pp.ua
+sudo rm -f /etc/nginx/sites-enabled/wny.com
 ````
 Do an Nginx configuration test:
 Then reload Nginx if OK is displayed
@@ -67,7 +67,7 @@ Then reload Nginx if OK is displayed
 sudo nginx -t
 sudo /etc/init.d/nginx restart
 ````
-Insert new domain angularjs.pp.ua
+Insert new domain wny.com
 ````
 sudo nano /etc/hosts
 ````
