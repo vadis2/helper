@@ -2,29 +2,29 @@
 ````
 cd /var/www
 ls
-sudo mkdir -p wny.com
+sudo mkdir -p wnyfe.com
 ls
-sudo chown -R $USER:$USER /var/www/wny.com
+sudo chown -R $USER:$USER /var/www/wnyfe.com
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/wny.com/index.html
+sudo nano /var/www/wnyfe.com/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to wny.com!</title>
+        <title>Welcome to wnyfe.com!</title>
     </head>
     <body>
-        <h1>Success!  The wny.com server block is working!</h1>
+        <h1>Success!  The wnyfe.com server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/wny.com
+sudo nano /etc/nginx/sites-available/wnyfe.com
 
 ````
 ````
@@ -32,10 +32,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/wny.com;
+    root /var/www/wnyfe.com;
     index index.php index.html index.htm;
 
-    server_name wny.com www.wny.com;
+    server_name wnyfe.com www.wnyfe.com;
 
     location / {
         # First attempt to serve request as file, then
@@ -55,11 +55,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/wny.com /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/wnyfe.com /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/wny.com
+sudo rm -f /etc/nginx/sites-enabled/wnyfe.com
 ````
 Do an Nginx configuration test:
 Then reload Nginx if OK is displayed
@@ -67,7 +67,7 @@ Then reload Nginx if OK is displayed
 sudo nginx -t
 sudo /etc/init.d/nginx restart
 ````
-Insert new domain wny.com
+Insert new domain wnyfe.com
 ````
 sudo nano /etc/hosts
 ````
