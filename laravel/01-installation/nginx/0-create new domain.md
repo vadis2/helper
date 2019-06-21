@@ -2,29 +2,29 @@
 ````
 cd /var/www
 ls
-sudo mkdir -p codeci.pp.ua
+sudo mkdir -p framework.pp.ua
 ls
-sudo chown -R $USER:$USER /var/www/codeci.pp.ua
+sudo chown -R $USER:$USER /var/www/framework.pp.ua
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/codeci.pp.ua/index.html
+sudo nano /var/www/framework.pp.ua/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to codeci.pp.ua!</title>
+        <title>Welcome to framework.pp.ua!</title>
     </head>
     <body>
-        <h1>Success!  The codeci.pp.ua server block is working!</h1>
+        <h1>Success!  The framework.pp.ua server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/codeci.pp.ua
+sudo nano /etc/nginx/sites-available/framework.pp.ua
 
 ````
 ````
@@ -32,10 +32,10 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/codeci.pp.ua;
+    root /var/www/framework.pp.ua;
     index index.php index.html index.htm;
 
-    server_name codeci.pp.ua www.codeci.pp.ua;
+    server_name framework.pp.ua www.framework.pp.ua;
 
     location / {
         # First attempt to serve request as file, then
@@ -55,11 +55,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/codeci.pp.ua /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/framework.pp.ua /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/codeci.pp.ua
+sudo rm -f /etc/nginx/sites-enabled/framework.pp.ua
 ````
 Do an Nginx configuration test:
 Then reload Nginx if OK is displayed
@@ -67,7 +67,7 @@ Then reload Nginx if OK is displayed
 sudo nginx -t
 sudo /etc/init.d/nginx restart
 ````
-Insert new domain codeci.pp.ua
+Insert new domain framework.pp.ua
 ````
 sudo nano /etc/hosts
 ````
