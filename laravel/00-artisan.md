@@ -8,6 +8,8 @@
   php artisan make:model           Create a new Eloquent model class
   php artisan make:provider        Create a new service provider class
   php artisan make:request         Create a new form request class
+  pa route:list
+  pa config:clear                  Clear cache of configuration (.env too) 
 
 laravel version
 php artisan --version
