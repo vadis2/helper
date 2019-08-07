@@ -1,4 +1,13 @@
 # Update
+# 1
+````
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable 
+or
+sudo n x.x.x // LTS!!!
+````
+# 2
 ````
 sudo npm install -g n
 
