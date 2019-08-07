@@ -1,4 +1,4 @@
-# Table Static 
+# Table Axios 
 ## Html part:
 ````
 <template>

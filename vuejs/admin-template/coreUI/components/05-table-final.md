@@ -1,4 +1,4 @@
-# Table Static 
+# Table Final 
 ## Html part:
 ````
 <template>
