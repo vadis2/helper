@@ -11,4 +11,5 @@
 |send all tags to the server     |git push origin --tags                                                              |   
 |delete all tags locally         |git tag {vertical line} xargs git tag -d                                            |   
 |delete all tags on remote       |git tag -l {vertical line} xargs -n 1 git push --delete origin                      |   
-   
+|delete one tag locally          |git tag -d 0.0.3                                                                    |
+                      |   
