@@ -29,6 +29,8 @@ public function run()
 ````
 for a server first:
 composer dump-autoload
+or
+cda
 
 then:
 php artisan db:seed

@@ -2,7 +2,7 @@ https://semaphoreci.com/community/tutorials/getting-started-with-phpunit-in-lara
 
 Terminal commands:
 ````
-pa make:test ExampleTest --Unit
+pa make:test ExampleTest --unit
 or
 pa make:test ExampleTest //для Feature
 ````

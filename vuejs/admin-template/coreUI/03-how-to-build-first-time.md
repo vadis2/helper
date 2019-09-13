@@ -1,4 +1,4 @@
-# How to build
+# How to build first time
 1. Do git commit
 2. Check vue.config.js:
 ````
