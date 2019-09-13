@@ -9,6 +9,7 @@ npm run build
 1. Check API server:
     
     1.1. Migration, seeding.
+    1.2. If it needs delete dir public/docs from remote repo: 
 
 2. Locally commit changes, merge to master, push to remote repo.
 3. Check git status at online server.
