@@ -5,19 +5,28 @@
 ````
 npm run build 
 ````
-## Online server
+3.Check functionality.
+
+## Online back-server
 1. Check API server:
     
     1.1. Migration, seeding.
-    1.2. If it needs delete dir public/docs from remote repo: 
+    1.2. If it needs delete dir public/docs from remote repo: https://github.com/vadis2/helper/blob/master/git/delete-dir-from-remote-repo.md
 
 2. Locally commit changes, merge to master, push to remote repo.
 3. Check git status at online server.
 4. Pull from remote repo.
-5. npm install new dependencies if they are.
-6. npm run build
-7. Check site.
-8. npm cache clear --force for pages where there are problems with output.
-9. Create version/tag. 
+5. Create documentation: ```` php artisan apidoc:generate````
+6. Check documentation.
 
+## Online front-end server
+1. Check git status
+2. Locally commit changes, merge to master, push to remote repo.
+3. Check git status at online server.
+4. Pull from remote repo.
+5. npm run build
+6. Check site.
+
+## Create version/tag on both servers
+https://github.com/vadis2/helper/blob/master/git/semver/02-git-commands.md
    

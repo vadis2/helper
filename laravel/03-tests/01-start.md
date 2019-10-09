@@ -19,4 +19,9 @@ or test with the one only test
 
 ./vendor/bin/phpunit --filter UserContrillerTest --testdox 
 
+test UserContrillerTest 
+
+or run 1 specific test from test file:
+
+test testGetRules tests/Functional/Api/V1/Controllers/RulesControllerTest
 ````

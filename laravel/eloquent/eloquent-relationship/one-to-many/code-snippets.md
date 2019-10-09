@@ -9,9 +9,10 @@
      */
     function documents()
     {
-        return $this->hasMany('Models/Documents');
+        return $this->hasMany('Models/Document', 'category_id');
     }
 ````
+category_id is the name of the foreign key in DB table "documents". 
 
 # Model Document
 ````
@@ -23,4 +24,16 @@
             return $this->belongsTo('Models/DocumentCategory');
         }
 ````
+
+# Getting
+To get documents:
+````
+$category->documents
+````
+
+To use as function:
+````
+$document = $category->documents()->where('title', 'foo')->first();
+````
+  
 

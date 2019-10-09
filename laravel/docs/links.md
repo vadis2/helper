@@ -1,5 +1,4 @@
 # Documentation
-https://laravel-apidoc-generator.readthedocs.io/en/latest/generating-documentation.html
 
 ## Help for variables
 https://www.ovac4u.com/idoc/#providing-an-example-response

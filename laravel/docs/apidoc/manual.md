@@ -19,7 +19,10 @@ scp root@167.99.242.147:/var/www/codeci.pp.ua/crmbackend2/public/docs/collection
 
 ##
 ````
-* @bodyParam department string required Department name
-* @bodyParam description string required Description
-* @bodyParam parent_id int Parent ID
+@bodyParam department string required Department name
+@bodyParam description string required Description
+@bodyParam parent_id int Parent ID
+````
+````
+@queryParam id required User Profile ID
 ````
