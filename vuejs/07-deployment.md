@@ -24,8 +24,9 @@ npm run build
 2. Locally commit changes, merge to master, push to remote repo.
 3. Check git status at online server.
 4. Pull from remote repo.
-5. npm run build
-6. Check site.
+5. ````npm install````
+6. ````npm run build````
+7. Check site.
 
 ## Create version/tag on both servers
 https://github.com/vadis2/helper/blob/master/git/semver/02-git-commands.md

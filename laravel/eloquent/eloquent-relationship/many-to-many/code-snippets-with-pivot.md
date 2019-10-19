@@ -36,3 +36,12 @@ $companies = $user->companies()->get();
 ````
 $user->companies()->attach($request->get('company'));
 ````
+## Detach roles
+All:
+````
+$user->roles()->detach();
+````
+Specified:
+````
+$user->roles()->detach([2, 3]);
+````

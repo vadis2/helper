@@ -17,12 +17,12 @@ category_id is the name of the foreign key in DB table "documents".
 # Model Document
 ````
 /**
-     * The categoy that belong to the document.
-     */
-    function category()
-        {
-            return $this->belongsTo('Models/DocumentCategory');
-        }
+ * The category that belong to the document.
+ */
+function category()
+    {
+        return $this->belongsTo('Models/DocumentCategory');
+    }
 ````
 
 # Getting
