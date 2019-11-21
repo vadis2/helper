@@ -39,3 +39,5 @@ It will be looked like:
         ],
 
 ````
+#### Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails (SQL: drop table if exists `customers`)
+Check WnyTestCase.php tearDown. Maybe new DB table is not dropped?

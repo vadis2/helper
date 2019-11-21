@@ -40,3 +40,7 @@ class Phone extends Model
 ````
 $phone = User::find(1)->phone;
 ````
+If we have object $user already then:
+````
+$phone=$user->phone;
+````
