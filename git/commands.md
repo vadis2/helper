@@ -15,11 +15,12 @@
 |                                |... git pom                                 |
 
 ## Origin (remote repo)
-|description                     |command                                                      |
-|--------------------------------|-------------------------------------------------------------|
-|list remote origin              |git remote -v                                                |
-|add remote origin               |git remote add origin ssh://git@bitbucket.org/vvadis/srs.git |
-|change remote origin            |git remote set-url origin git@github.com:vadis2/cihmvcd.git  |
+|description                     |command                                                                 |
+|--------------------------------|------------------------------------------------------------------------|
+|list remote origin              |git remote -v                                                           |
+|add remote origin               |git remote add origin ssh://git@bitbucket.org/vvadis/srs.git            |
+|change remote origin            |git remote set-url origin git@github.com:vadis2/cihmvcd.git             |
+|change remote origin            |git remote set-url origin https://gitlab.com/VVadis/vue-press-blog.git  |
 
 ## Branches
 |description                     |command                                             |
