@@ -25,6 +25,14 @@ function category()
     }
 ````
 
+# Use in controller
+````
+$files = File::with('user')
+    ->whereOwnerObjectType('customer')
+    ->whereOwnerObjectId($customerId)
+    ->get();
+````
+
 # Getting
 To get documents:
 ````

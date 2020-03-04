@@ -5,6 +5,7 @@
 
 methods: {
   addDetails(id) {
+    ...
     this.$emit('add-details', {'customer_id': this.customer_id, 'user_id': id});
     this.$router.push({path: '/admin/user-details/create'})
   }
