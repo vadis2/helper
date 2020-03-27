@@ -79,3 +79,4 @@ public function getFile($id)
     return Storage::disk('public')->download($file->filename, $file->filename, $headers);
 }
 ````
+

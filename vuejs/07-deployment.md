@@ -16,8 +16,12 @@ npm run build
 2. Locally commit changes, merge to master, push to remote repo.
 3. Check git status at online server.
 4. Pull from remote repo.
-5. Create documentation: ```` php artisan apidoc:generate````
-6. Check documentation.
+5. ````php artisan storage:link````
+6. ````cda````
+7. ````pamfs````
+8. ````testf````
+9. Create documentation: ```` php artisan apidoc:generate````
+10. Check documentation.
 
 ## Online front-end server
 1. Check git status

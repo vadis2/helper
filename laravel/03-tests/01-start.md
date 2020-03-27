@@ -17,9 +17,9 @@ or with better formatting
 
 or test with the one only test
 
-./vendor/bin/phpunit --filter UserContrillerTest --testdox 
+./vendor/bin/phpunit --filter UserControllerTest --testdox 
 
-test UserContrillerTest 
+test UserControllerTest 
 
 or run 1 specific test from test file:
 
