@@ -71,4 +71,15 @@
  * @property-read Collection|Method[] $methods
  */
 ````
+````
+/**
+ * Seeder for lead_sources table
+ *
+ * @category Seed
+ * @package  LeadSources
+ * @author   Volodymyr Vadiasov <vadiasov.volodymyr@gmail.com>
+ * @license  https://opensource.org/licenses/CDDL-1.0 CDDL-1.0
+ * @link     Seed
+ */
+````
 

@@ -2,37 +2,37 @@
 ````
 cd /var/www
 ls
-sudo mkdir -p metras5.com
+sudo mkdir -p marketplace.com
 ls
-sudo chown -R $USER:$USER /var/www/metras5.com
+sudo chown -R $USER:$USER /var/www/marketplace.com
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/metras5.com/index.html
+sudo nano /var/www/marketplace.com/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to metras5.com!</title>
+        <title>Welcome to marketplace.com!</title>
     </head>
     <body>
-        <h1>Success!  The metras5.com server block is working!</h1>
+        <h1>Success!  The marketplace.com server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/metras5.com
+sudo nano /etc/nginx/sites-available/marketplace.com
 
 ````
 ````
 server {
-    root /var/www/metras5.com;
+    root /var/www/marketplace.com;
     index index.php index.html index.htm;
 
-    server_name metras5.com www.metras5.com;
+    server_name marketplace.com www.marketplace.com;
     location / {
         # First attempt to serve request as file, then
         # as directory, then fall back to index.html
@@ -51,11 +51,11 @@ server {
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/metras5.com /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/marketplace.com /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/metras5.com
+sudo rm -f /etc/nginx/sites-enabled/marketplace.com
 ````
 Do an Nginx configuration test:
 ````
@@ -65,7 +65,14 @@ Then reload Nginx if OK is displayed
 ````
 sudo systemctl reload nginx
 ````
-Insert new domain metras5.com
+Insert new domain marketplace.com
 ````
 sudo nano /etc/hosts
+````
+Change bashrc:
+````
+sudo nano ~/.bashrc
+alias mp='cd /var/www/marketplace.com'
+. ~/.bashrc
+mp
 ````

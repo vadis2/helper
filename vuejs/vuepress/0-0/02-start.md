@@ -1,4 +1,9 @@
 # Start
+To start locally:
+````
+sudo vuepress dev docs
+````
+
 ````
 npm run docs:build
 ````

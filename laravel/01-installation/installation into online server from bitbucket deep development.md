@@ -14,7 +14,7 @@ sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
 
 3. Edit server configuration:
 ````
-sudo nano /etc/nginx/sites-available/flatwise.io
+sudo nano /etc/nginx/sites-available/marketplace.com
 
 server {
     root /usr/share/nginx/srs3.com/blog/public;
@@ -54,6 +54,11 @@ sudo nano .env
 6. Install vendor:
 ````
 sudo composer install
+````
+
+6.1 Generate key
+````
+php artisan key:generate
 ````
 7. Create DB
 

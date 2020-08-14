@@ -1,12 +1,14 @@
 # Commands
-|description                  |command                                     |
-|-----------------------------|--------------------------------------------|
-|show branches and commits    |git show-branch                             |
-|list                         |git remote                                  |
-|in detailes                  |git remote show origin                      |
-|local list                   |git branch                                  |
-|local + remote list          |git branch -a                               |
-|push from local to new branch|git push origin local_branch1:remote_branch2|
+|description                  |command                                                       |
+|-----------------------------|--------------------------------------------------------------|
+|show branches and commits    |git show-branch                                               |
+|list                         |git remote                                                    |
+|in detailes                  |git remote show origin                                        |
+|local list                   |git branch                                                    |
+|local + remote list          |git branch -a                                                 |
+|push from local to new branch|git push origin local_branch1:remote_branch2                  |
+|clone from other branch      |git clone --single-branch --branch <branchname> <remote-repo> |
+|make Git ignore mode change  |git config core.fileMode false                                |
 
 |description                     |command                                     |
 |--------------------------------|--------------------------------------------|
@@ -21,6 +23,14 @@
 |add remote origin               |git remote add origin ssh://git@bitbucket.org/vvadis/srs.git            |
 |change remote origin            |git remote set-url origin git@github.com:vadis2/cihmvcd.git             |
 |change remote origin            |git remote set-url origin https://gitlab.com/VVadis/vue-press-blog.git  |
+
+## Additional remote repo
+|description                     |command                                                                 |
+|--------------------------------|------------------------------------------------------------------------|
+|set a new remote                |git remote add new_repo_name git@github.com:vadis2/cihmvcd.git          |
+|verify new remote               |git remote -v                                                           |
+|push                            |git push new_repo_name                                                  |
+|push to branch                  |git push new_repo_name <branch>                                         |
 
 ## Branches
 |description                     |command                                             |

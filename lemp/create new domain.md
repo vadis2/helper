@@ -1,53 +1,63 @@
 # Create new domain
 ````
 cd /var/www
-sudo mkdir -p metras2.com
-sudo chown -R $USER:$USER /var/www/metras2.com
+sudo mkdir -p paa.com
+sudo chown -R $USER:$USER /var/www/paa.com
 sudo chmod -R 755 /var/www
 ````
 Page sample
 ````
-sudo nano /var/www/metras2.com/index.html
+sudo nano /var/www/paa.com/index.html
 ````
 ````
 <html>
     <head>
-        <title>Welcome to metras2.com!</title>
+        <title>Welcome to paa.com!</title>
     </head>
     <body>
-        <h1>Success!  The metras2.com server block is working!</h1>
+        <h1>Success!  The paa.com server block is working!</h1>
     </body>
 </html>
 ````
 Create Server Block Files for Domain
 ````
 cd /etc/nginx/sites-available
-sudo nano /etc/nginx/sites-available/metras2.com
+sudo nano /etc/nginx/sites-available/paa.com
 
 ````
 ````
 server {
-    root /var/www/metras2.com;
+    listen 80;
+    listen [::]:80;
+
+    root /var/www/paa.com;
     index index.php index.html index.htm;
 
-    server_name metras2.com www.metras2.com;
+    server_name paa.com www.paa.com;
+
     location / {
-        try_files $uri $uri/ /index.php;
+        # First attempt to serve request as file, then
+        # as directory, then fall back to index.html
+        try_files $uri $uri/ /index.php?$query_string;
     }
 
     location ~ \.php$ {
-        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-        include snippets/fastcgi-php.conf;
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
     }
 }
 ````
 Enable both the sites by creating symbolic links to the sites-enabled directory
 ````
-sudo ln -s /etc/nginx/sites-available/metras2.com /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/paa.com /etc/nginx/sites-enabled
 ````
 If duplicate:
 ````
-sudo rm -f /etc/nginx/sites-enabled/metras2.com
+sudo rm -f /etc/nginx/sites-enabled/paa.com
 ````
 Do an Nginx configuration test:
 ````
@@ -60,7 +70,7 @@ sudo systemctl reload nginx
 Create row in the file hosts
 ````
 cd /etc
-sudo nano hosts
+sudo nano /etc/hosts
 ````
 
 Git config

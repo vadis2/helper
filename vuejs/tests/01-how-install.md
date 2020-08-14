@@ -77,7 +77,7 @@ npm install --save-dev babel-jest
   "jest": {
     // ...
     "collectCoverage": true,
-    "collectCoverageFrom": ["**/*.{js,vue}", "!**/node_modules/**"]
+    "collectCoverageFrom": ["**/*.{js,vue}", "!**/node_modules/**"],
     "coverageReporters": ["html", "text-summary"]
   }
 }
@@ -97,6 +97,10 @@ npm install --save-dev jest-serializer-vue
   }
 }
 ````
-
+Add in package.json:
+````
+"babel-core": "^7.0.0-bridge.0"
+````
+Then ```npm install```
 
 

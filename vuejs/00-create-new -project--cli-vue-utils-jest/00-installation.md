@@ -1,8 +1,8 @@
 # Installation
 1.Create dir.
 ````
-cd ~/cd Documents/Projects
-mkdir project_name && cd $_
+cd ~/Documents/Projects
+mkdir vue-test-book-0 && cd $_
 ````
 2.Installation Make permissions
 ````
