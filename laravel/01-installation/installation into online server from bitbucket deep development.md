@@ -14,7 +14,7 @@ sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
 
 3. Edit server configuration:
 ````
-sudo nano /etc/nginx/sites-available/marketplace.com
+sudo nano /etc/nginx/sites-available/laravel3.pp.ua
 
 server {
     root /usr/share/nginx/srs3.com/blog/public;

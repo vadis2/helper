@@ -44,3 +44,16 @@ If we have object $user already then:
 ````
 $phone=$user->phone;
 ````
+
+### Adding
+````
+$creators = Creator::with('user')->select([
+                    'id',
+                    'user_id',
+                    'stripe',
+                    'siret',
+                    'read',
+                    'created_at',
+                    'updated_at'
+                ])->get();
+````

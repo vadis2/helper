@@ -24,4 +24,5 @@ test UserControllerTest
 or run 1 specific test from test file:
 
 test testGetRules tests/Functional/Api/V1/Controllers/RulesControllerTest
+test testGetRules tests/Functional/API/v1/RulesControllerTest
 ````

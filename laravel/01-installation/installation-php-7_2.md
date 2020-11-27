@@ -14,16 +14,16 @@ sudo git clone https://vvadis@bitbucket.org/vvadis/dhh.git
 
 3. Edit server configuration:
 ````
-sudo nano /etc/nginx/sites-available/metras2.com
+sudo nano /etc/nginx/sites-available/masterplace.com
 
 server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/metras2.com;
+    root /var/www/masterplace.com;
     index index.php index.html index.htm;
 
-    server_name metras2.com www.metras2.com;
+    server_name masterplace.com www.masterplace.com;
 
     location / {
         # First attempt to serve request as file, then

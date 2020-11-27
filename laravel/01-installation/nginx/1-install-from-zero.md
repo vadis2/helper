@@ -11,13 +11,13 @@ composer create-project --prefer-dist laravel/laravel dhh
 
 ## change server configuration:
 ````
-sudo nano /etc/nginx/sites-available/laravel3.pp.ua
+sudo nano /etc/nginx/sites-available/rt2.com
 
 server {
-    root /var/www/laravel3.pp.ua/cms/public;
+    root /var/www/rt2.com/cms/public;
     index index.php index.html index.htm;
 
-    server_name laravel3.pp.ua www.laravel3.pp.ua;
+    server_name rt2.com www.rt2.com;
     location / {
             # First attempt to serve request as file, then
             # as directory, then fall back to index.html
@@ -27,7 +27,7 @@ server {
         location ~ \.php$ {
             try_files $uri =404;
             fastcgi_split_path_info ^(.+\.php)(/.+)$;
-            fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+            fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             include fastcgi_params;
@@ -59,6 +59,6 @@ DB_PASSWORD=456v123
 
 ## Create phpStorm project
 ````
-sudo chown -R $USER:$USER /var/www/laravel3.pp.ua
+sudo chown -R $USER:$USER /var/www/rt2.com
 ````
 Create project

@@ -12,7 +12,8 @@ sudo chmod -R 755 Projects
 ````
 3.Install Vue
 ````
-cd ~/cd Documents/Projects/project_name
+cd ~/
+cd Documents/Projects/project_name
 vue create project-name_
 cd project-name_
 ````

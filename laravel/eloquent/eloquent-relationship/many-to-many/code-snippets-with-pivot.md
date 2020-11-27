@@ -12,7 +12,9 @@ user_company
      */
     public function companies()
     {
-        return $this->belongsToMany('App\Models\Company', 'user_companies')->withTimestamps();
+        return $this->belongsToMany('App\Models\Company', 'user_companies')
+            ->withTimestamps();
+
     }
 ````
 
@@ -31,7 +33,55 @@ user_company
 ## Get companies
 ````
 $companies = $user->companies()->get();
+$event = Event::whereId($id)
+    ->with('users:name,email,user_type,citizen_id,company_id,creator_id')
+    ->get();
 ````
+### Structure, test
+````
+$response->assertJsonStructure(
+            [
+                'success',
+                'code',
+                'data' =>
+                    [
+
+                        "category_id",
+                        "creator_id",
+                        "payment_type",
+                        "regions",
+                        "type",
+                        "active",
+                        "read",
+                        "title",
+                        "description",
+                        "max",
+                        "map",
+                        "created_at",
+                        "updated_at",
+                        "users" =>
+                            [
+                                [
+                                    "name",
+                                    "email",
+                                    "user_type",
+                                    "citizen_id",
+                                    "company_id",
+                                    "creator_id",
+                                    "pivot" =>
+                                        [
+                                            'event_id',
+                                            'user_id',
+                                            'created_at',
+                                            'updated_at'
+                                        ]
+                                ]
+                            ]
+                    ],
+                'message'
+            ]
+````
+
 ## Create user
 ````
 $user->companies()->attach($request->get('company'));

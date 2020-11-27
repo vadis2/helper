@@ -41,3 +41,34 @@ It will be looked like:
 ````
 #### Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails (SQL: drop table if exists `customers`)
 Check WnyTestCase.php tearDown. Maybe new DB table is not dropped?
+
+#### 302, API, Test
+````
+✘ Store a wrong data for admin
+        ┐
+        ├ Expected status code 422 but received 302. 
+````
+Solution: add header
+````
+$response = $this->withHeader('Accept', 'application/json')
+            ->post('api/v1/users?token=' . $token, $data);
+````
+
+#### phpUnit 9
+Change in phpunit.xml:
+````
+<!--
+<filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+        <directory suffix=".php">./app</directory>
+    </whitelist>
+</filter>
+-->
+<coverage processUncoveredFiles="true">
+    <include>
+        <directory suffix=".php">./app</directory>
+    </include>
+</coverage>
+````
+
+        
